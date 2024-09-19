@@ -8,8 +8,16 @@ h1, h2{
     margin: 0;
 }
 
-.blue{
+.bgdBlue{
     background-color: #1964d482;
+}
+
+.blue{
+    color: #3895ea;
+}
+
+.ocre{
+    color:#dd820d;
 }
 
 .wrap{
@@ -67,7 +75,6 @@ nav{
     width: 300px;
     margin: auto;
     padding-top: 10px;
-    padding-bottom: 10px;
     text-align: center;
     border: 1px solid white;
     border-radius: 5px;
@@ -79,6 +86,88 @@ nav{
 }
 
 /*----SOBRE MI----*/
+
+#stnSobreMi{
+    margin-bottom: 40px;
+}
+
+#imgContainer{
+    position: relative;
+    top: -75px;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border: 5px solid #ffffff94;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+#imgContainer img{
+    width: 100%;
+}
+
+#stnSobreMi h2,
+#stnTrabajos h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#stnSobreMi p{
+    padding: 0 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*----TABAJOS----*/
+
+#stnTrabajos{
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+#stnTrabajos h2{
+    margin-bottom: 40px;
+}
+
+#cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-gap: 20px;
+    justify-content: space-between;
+}
+
+.card{
+    width: 250px;
+    text-align: center;
+}
+
+.card .imgCard{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card .imgCard img{
+    width: 100%;
+}
+
+.card span{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card p{
+    color: #444;
+}
+
+
+
+
 
 
 
