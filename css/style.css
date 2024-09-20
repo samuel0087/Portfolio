@@ -235,14 +235,20 @@ footer h3{
 }
 
 footer #redes{
-    width: 100%;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .social{
     width: 80px;
     height: 80px;
+}
+
+.social:hover{
+    filter : drop-shadow( 0px 0px 5px #666);
 }
 
 .social img{
