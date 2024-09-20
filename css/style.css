@@ -188,17 +188,17 @@ nav{
     padding: 40px 20px;
 }
 
-#stnTecnologias h2{
-
+#php-icon{
+    line-height: 200px;
 }
 
 #tecnologias{
-    width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 200px);
     grid-gap: 20px;
     justify-content: space-between;
+    justify-items: center;
 }
 
 .icoTecnologia{
