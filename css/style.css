@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 h1, h2{
@@ -10,6 +10,10 @@ h1, h2{
 
 .bgdBlue{
     background-color: #1964d482;
+}
+
+.fterBlue{
+    background-color: #1e2b38;
 }
 
 .blue{
@@ -79,6 +83,13 @@ nav{
     border: 1px solid white;
     border-radius: 5px;
     color: white;
+    transition: 300ms;
+}
+
+#btnPerfil:hover{
+    background-color: white;
+    color: #3895ea;
+    cursor: pointer;
 }
 
 #btnPerfil h1{
@@ -89,6 +100,10 @@ nav{
 
 #stnSobreMi{
     margin-bottom: 40px;
+}
+
+#stnSobreMi h2{
+    margin-top: -40px;
 }
 
 #imgContainer{
@@ -107,7 +122,8 @@ nav{
 }
 
 #stnSobreMi h2,
-#stnTrabajos h2{
+#stnTrabajos h2,
+#stnTecnologias h2{
     text-align: center;
     font-weight: 500;
     font-size: 30px;
@@ -128,14 +144,15 @@ nav{
     padding-top: 40px;
 }
 
-#stnTrabajos h2{
+#stnTrabajos h2,
+#stnTecnologias h2{
     margin-bottom: 40px;
 }
 
 #cardsContainer{
     display: grid;
     grid-template-columns: repeat(4, 250px);
-    grid-gap: 20px;
+    grid-gap: 30px;
     justify-content: space-between;
 }
 
@@ -163,6 +180,64 @@ nav{
 
 .card p{
     color: #444;
+}
+
+/*----TECNOLOGIAS----*/
+#stnTecnologias{
+    width: 100%;
+    padding: 40px 20px;
+}
+
+#stnTecnologias h2{
+
+}
+
+#tecnologias{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-gap: 20px;
+    justify-content: space-between;
+}
+
+.icoTecnologia{
+    width: 150px;
+    height: 150px;
+}
+
+.icoTecnologia img{
+    width: 100%;
+}
+
+/*----PIE DE PAGINA----*/
+footer{
+    padding: 30px 20px;
+    color: white;
+}
+footer h3{
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer #redes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    width: 80px;
+    height: 80px;
+}
+
+.social img{
+    width: 100%;
+}
+
+#fterDescripcion{
+    text-align: center;
 }
 
 
