@@ -49,6 +49,7 @@ header{
 #hdrFondo{
     width: 100%;
     height: 100%;
+    box-shadow: 0px 0px 500px #000 inset;
 }
 
 
@@ -209,7 +210,7 @@ nav{
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 200px);
-    grid-gap: 20px;
+    grid-gap: 30px;
     justify-content: space-between;
     justify-items: center;
 }
@@ -217,10 +218,36 @@ nav{
 .icoTecnologia{
     width: 150px;
     height: 150px;
+    filter : drop-shadow( 6px 5px 10px #666);
+}
+
+.icoTecnologia:hover{
+    animation-name: rebote;
+    animation-duration: 900ms;
+    animation-timing-function: linear;
+    cursor: pointer;
 }
 
 .icoTecnologia img{
     width: 100%;
+}
+
+@keyframes rebote{
+    25%{
+        transform: translateY(-8px);
+    }
+    
+    50%{
+        transform: translateY(0px);
+    }
+
+    75%{
+        transform:translateY(-3px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
 }
 
 /*----PIE DE PAGINA----*/
@@ -245,10 +272,11 @@ footer #redes{
 .social{
     width: 80px;
     height: 80px;
+    transition: all 300ms;
 }
 
 .social:hover{
-    filter : drop-shadow( 0px 0px 5px #666);
+    filter : drop-shadow( 0px 0px 10px #666);
 }
 
 .social img{
