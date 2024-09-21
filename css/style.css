@@ -184,7 +184,15 @@ nav{
 }
 
 .card .imgCard img{
-    width: 100%;
+    height: 100%;
+}
+
+#web-responsive{
+    transform: translateX(-15%);
+}
+
+#login{
+    transform: translateX(-25%);
 }
 
 .card span{
