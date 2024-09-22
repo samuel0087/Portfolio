@@ -300,6 +300,15 @@ textarea{
     border-radius: 5px;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+    outline: none;
+    border: 1px solid #3895ea;
+    box-shadow: 0 0 5px #3895ea;
+}
+
+
 textarea{
     min-width: 500px;
     max-width: 500px;
@@ -372,6 +381,38 @@ footer #redes{
 }
 
 
+#flecha{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #2d78bed8;
+    border-radius: 100%;
+    transition: all 300ms;
+}
+
+#flecha:hover{
+    background-color: #3894eae5;
+    cursor: pointer;
+    box-shadow: 0 0 5px #3895ea;
+}
+
+#flecha img{
+    width: 100%;
+    transform: rotate(270deg);
+}
+
+
+.hide{
+    display: none;
+    transform: translateY(300px);
+}
+
+.active{
+    display: block;
+    transform: translateY(0px);
+}
 
 
 
