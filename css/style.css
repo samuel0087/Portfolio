@@ -203,6 +203,10 @@ nav{
     transform: translateX(-30px);
 }
 
+#imgDron{
+    transform: translateX(-75px);
+}
+
 .card span a{
     font-size: 18px;
     font-weight: 600;
