@@ -126,12 +126,11 @@ nav{
     width: 100%;
 }
 
-#stnSobreMi h2,
-#stnTrabajos h2,
-#stnTecnologias h2{
+.subtitulo{
     text-align: center;
     font-weight: 500;
     font-size: 30px;
+    margin-bottom: 30px;
 }
 
 #stnSobreMi p{
@@ -143,14 +142,19 @@ nav{
 
 /*----TABAJOS----*/
 
-#stnTrabajos{
+#stnTrabajos,
+#stnTecnologias{
     background-color: #f2f2f2;
+}
+
+#stnContacto,
+#stnTrabajos,
+#stnTecnologias{
     padding: 40px 20px;
 }
 
-#stnTrabajos h2{
-    margin-bottom: 40px;
-}
+
+
 
 #cardsContainer{
     display: grid;
@@ -218,7 +222,8 @@ nav{
 }
 
 /*----TECNOLOGIAS----*/
-#stnTecnologias{
+#stnTecnologias,
+#stnContactos{
     width: 100%;
     padding: 40px 20px;
     text-align: center;
@@ -306,7 +311,11 @@ textarea{
 }
 
 input[type="submit"]{
+
+    grid-column-start: 1;
+    grid-column-end: 3;
     width: 200px;
+    margin: auto;
     padding: 15px;
     background-color: #3895ea;
     font-size: 16px;
