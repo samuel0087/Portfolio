@@ -145,12 +145,10 @@ nav{
 
 #stnTrabajos{
     background-color: #f2f2f2;
-    padding: 20px;
-    padding-top: 40px;
+    padding: 40px 20px;
 }
 
-#stnTrabajos h2,
-#stnTecnologias h2{
+#stnTrabajos h2{
     margin-bottom: 40px;
 }
 
@@ -162,7 +160,8 @@ nav{
 }
 
 .card{
-    width: 250px;
+    display: block;
+    width: 270px;
     text-align: center;
     box-shadow: 5px 5px 10px #7e7e7e;
     border-radius: 10px;
@@ -176,7 +175,7 @@ nav{
 }
 
 .card .imgCard{
-    width: 250px;
+    width: 270px;
     height: 250px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -187,7 +186,8 @@ nav{
     height: 100%;
 }
 
-#web-responsive{
+#web-responsive,
+#tienda{
     transform: translateX(-15%);
 }
 
@@ -195,19 +195,33 @@ nav{
     transform: translateX(-25%);
 }
 
-.card span{
+#imgControlStock{
+    transform: translateX(-30px);
+}
+
+.card span a{
     font-size: 18px;
     font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.card span a:hover{
+    color: #2d78be;
+    text-shadow: 0px 0px 2px #3895ea;
 }
 
 .card p{
     color: #444;
+    padding: 10px;
 }
 
 /*----TECNOLOGIAS----*/
 #stnTecnologias{
     width: 100%;
     padding: 40px 20px;
+    text-align: center;
 }
 
 #php-icon{
@@ -216,6 +230,7 @@ nav{
 
 #tecnologias{
     margin: auto;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(5, 200px);
     grid-gap: 30px;
@@ -257,6 +272,58 @@ nav{
         transform:translateY(0px);
     }
 }
+
+/*----CONTACTO----*/
+#form{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: 3;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    padding: 20px 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    border: 1px solid #999;
+    padding: 15px;
+    color: #666;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+textarea{
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 150px;
+    max-height: 250px;
+    font-family: inherit;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+input[type="submit"]{
+    width: 200px;
+    padding: 15px;
+    background-color: #3895ea;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #2d78be;
+    transition: 300ms;
+}
+
+input[type="submit"]:hover{
+    background-color: #2d78be;
+    cursor: pointer;
+}
+
+
+
 
 /*----PIE DE PAGINA----*/
 footer{
