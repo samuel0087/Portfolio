@@ -117,14 +117,14 @@ nav{
     transition: 300ms;
 }
 
-#header-fixed #nombre{
+#header-fixed #nombre-nav {
     margin-left: 40px;
     display: block;
     width: 200px;
     text-align: center;
 }
 
-#header-fixed #nombre h1{
+#header-fixed #nombre-nav  h1{
     line-height: 60px;
     font-size: 24px;
     color: white;
@@ -132,7 +132,7 @@ nav{
     transition: 100ms;
 }
 
-#header-fixed #nombre h1:hover{
+#header-fixed #nombre-nav h1:hover{
     text-shadow: 0 0 6px white;
 }
 
@@ -536,6 +536,48 @@ footer #redes{
 
     #imgDron{
         transform: translateX(0);
+    }
+}
+
+@media (max-width:530px){
+    #header-fixed{
+        height: 60px;
+    }
+
+    #nombre-nav {
+        display: none!important;
+    }
+
+    #header-fixed nav {
+        top: 0;
+        position: relative;
+        margin: auto;
+    }
+
+    #tecnologias{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #form{
+        grid-template-columns: repeat(1, 1fr) ;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+        padding: 20px 20px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        grid-column-start: 1;
+        min-width: 300px;
+        width: 90%;
+        margin: auto;
+    }
+
+    textarea{
+        max-width: 520px;
+        min-width: 300px;
     }
 }
 
