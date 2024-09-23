@@ -2,6 +2,8 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+
         <title>Samuel Medina</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,14 +13,14 @@
         
     </head>
     <body>
-        <header>
+        <header id="header-principal">
             <div id="hdrFondo" class="bgdBlue">
                 <div class="wrap">
                     <nav>
-                        <ul id="menu">
-                            <li><a  id="AbouMe" href="javascript:void(0)" >Sobre mi</a></li>
-                            <li><a id="Trabajos" href="javascript:void(0)" >Trabajos</a></li>
-                            <li><a id="Contacto" href="javascript:void(0)" >Contacto</a></li>
+                        <ul class="menu">
+                            <li><a  class="AbouMe" href="javascript:void(0)" >Sobre mi</a></li>
+                            <li><a class="Trabajos" href="javascript:void(0)" >Trabajos</a></li>
+                            <li><a class="Contacto" href="javascript:void(0)" >Contacto</a></li>
                         </ul>
                     </nav>
     
@@ -28,6 +30,21 @@
                     </div>
                 </div>
             </div>
+        </header>
+
+        <header class="top" id="header-fixed">
+            <div id="nombre">
+                <h1>Samuel Medina</h1>
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li><a  class="AbouMe" href="javascript:void(0)" >Sobre mi</a></li>
+                    <li><a class="Trabajos" href="javascript:void(0)" >Trabajos</a></li>
+                    <li><a class="Contacto" href="javascript:void(0)" >Contacto</a></li>
+                </ul>
+            </nav>
+
         </header>
 
         <section id="stnSobreMi">
@@ -41,6 +58,7 @@
                 <p>
                     Soy técnico en informática, me encuentro estudiando en la UTN (Universidad Tecnológica Nacional) cursando el segundo año de la Tecnicatura Universitaria en Programación.                    Actualmente me encuentro desarrollando aplicaciones de escritorio con .NET Framework y SQL Server. También he estudiado de manera autodidacta desarrollo web con HTML, CSS, JavaScript y PHP. Cuento con conocimiento en POO, Base de datos relacionales (SQL), Git y GitHub.
                 </p>
+                
                 
             </div>
         </section>

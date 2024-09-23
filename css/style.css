@@ -35,6 +35,11 @@ h1, h2{
     margin: auto;
 }
 
+.top{
+    top:-80px!important;
+}
+
+
 /*----CABECERA----*/
 
 header{
@@ -59,13 +64,13 @@ nav{
     top: 20px;
 }
 
-#menu{
+.menu{
     display: flex;
     list-style: none;
     margin: 0;
 }
 
-#menu li a{
+.menu li a{
     display: block;
     padding: 10px 15px;
     font-size: 18px;
@@ -73,7 +78,7 @@ nav{
     color: white;
 }
 
-#menu li a:hover{
+.menu li a:hover{
     transition: 1s;
     border-bottom: 1px solid white;
 }
@@ -100,6 +105,54 @@ nav{
 #btnPerfil h1{
     font-weight: 400;
 }
+
+/*----Cabecera Fija----*/
+#header-fixed{
+    position: fixed;
+    top: 0;
+    height: auto;
+    background-image: none;
+    background-color: #2d78be;
+    z-index: 20;
+    transition: 300ms;
+}
+
+#header-fixed #nombre{
+    margin-left: 40px;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+#header-fixed #nombre h1{
+    line-height: 60px;
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    transition: 100ms;
+}
+
+#header-fixed #nombre h1:hover{
+    text-shadow: 0 0 6px white;
+}
+
+
+#header-fixed nav{
+    top: 0;
+}
+
+
+#header-fixed .menu a{
+    padding: 18px 30px;
+    transition: 300ms;
+}
+
+#header-fixed .menu a:hover{
+    border: none;
+    background-color: white;
+    color: #3895ea;
+}
+
 
 /*----SOBRE MI----*/
 
@@ -416,6 +469,74 @@ footer #redes{
 .active{
     display: block;
     transform: translateY(0px);
+}
+
+@media (max-width: 1200px){
+
+    .wrap{
+        max-width: none;
+    }
+
+    #tecnologias{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #cardsContainer{
+        padding: 0 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 900px){
+    #header-principal{
+        display: none;
+    }
+
+    #header-fixed{
+        display: block;
+        top: 0!important;
+    }
+
+    #stnSobreMi {
+        margin-top: 150px;
+    }
+
+    #tecnologias{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #cardsContainer{
+        padding: 0 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        display: block;
+        width: 400px;
+        margin: auto;
+    }
+
+    .card .imgCard{
+        width: 100%;
+    }
+
+    #web-responsive,
+    #tienda{
+        transform: translateX(0);
+    }
+
+    #login{
+        transform: translateX(-10%);
+    }
+
+    #imgControlStock{
+        transform: translateX(0);
+    }
+
+    #imgDron{
+        transform: translateX(0);
+    }
 }
 
 
